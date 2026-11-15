@@ -1,0 +1,38 @@
+# Données brutes NISAR (fichiers HDF5 volumineux, non versionnés)
+data-nisar/
+
+# Fichiers générés par l'ingestion (COGs, base SQLite, exports)
+nisar-vision/backend/data/
+nisar-vision/backend/nisar_vision.db
+nisar-vision/backend/*.db
+nisar-vision/backend/*.sqlite
+
+# Environnement Python et dépendances
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Dépendances et build frontend
+nisar-vision/frontend/node_modules/
+nisar-vision/frontend/dist/
+nisar-vision/frontend/test-results/
+nisar-vision/frontend/playwright-report/
+
+# Fichiers d'environnement (contiennent des secrets)
+.env
+nisar-vision/.env
+nisar-vision/backend/.env
+
+# Cache et couverture de tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
