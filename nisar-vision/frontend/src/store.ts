@@ -24,14 +24,14 @@ interface State {
 export const useApp = create<State>((set) => ({
   demo: false,
   setDemo: (demo) => set({ demo, date: null, compareDate: null }),
-  center: [9.7, 4.05],
-  zoom: 9,
+  center: [82.98, 8.86],
+  zoom: 8,
   setView: (center, zoom) => set({ center, zoom }),
   date: null,
   setDate: (date) => set({ date }),
   compareDate: null,
   setCompareDate: (compareDate) => set({ compareDate }),
-  activeLayers: ["nisar-gcov-hh"],
+  activeLayers: ["nisar-gcov-vv"],
   toggleLayer: (key, on) => set((s) => {
     const has = s.activeLayers.includes(key);
     const want = on ?? !has;

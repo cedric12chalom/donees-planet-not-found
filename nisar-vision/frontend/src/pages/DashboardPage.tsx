@@ -19,7 +19,7 @@ export function DashboardPage() {
   const dates = useMemo(() => [...new Set((layers.data ?? []).flatMap((l) => l.coverage?.dates ?? []))].sort(), [layers.data]);
   const [start, setStart] = useState(""); const [end, setEnd] = useState("");
   const [freq, setFreq] = useState<"day" | "week" | "month">("month");
-  const [lon, setLon] = useState("9.70"); const [lat, setLat] = useState("4.05"); const [rad, setRad] = useState(3);
+  const [lon, setLon] = useState("82.98"); const [lat, setLat] = useState("8.86"); const [rad, setRad] = useState(3);
   const [aoiErr, setAoiErr] = useState<string | null>(null);
   const [da, setDa] = useState(""); const [db, setDb] = useState("");
   const [horizon, setHorizon] = useState(3);

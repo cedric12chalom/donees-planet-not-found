@@ -139,7 +139,7 @@ export function MapPage() {
           <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={basemap} onChange={(e) => setBasemap(e.target.checked)} />Fond de carte OSM (contexte)</label>
           <form onSubmit={doSearch} className="space-y-1" role="search">
             <label htmlFor="q" className="text-sm font-semibold">Rechercher un lieu</label>
-            <div className="flex gap-1"><input id="q" className="field min-w-0 flex-1" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Douala ou 4.05, 9.70" /><button className="btn" type="submit">Aller</button></div>
+            <div className="flex gap-1"><input id="q" className="field min-w-0 flex-1" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Batticaloa ou 8.86, 82.98" /><button className="btn" type="submit">Aller</button></div>
             {searchMsg && <p className="text-xs text-slate-400" role="status">{searchMsg}</p>}
           </form>
           <section aria-labelledby="h-aoi" className="space-y-2">
